@@ -1,0 +1,105 @@
+{
+  "by": "city_name",
+  "valid_key": true,
+  "results": {
+    "temp": 17,
+    "date": "31/08/2021",
+    "time": "22:03",
+    "condition_code": "29",
+    "description": "Parcialmente nublado",
+    "currently": "noite",
+    "cid": "",
+    "city": "Brasília, DF",
+    "img_id": "29n",
+    "humidity": 73,
+    "wind_speedy": "4.57 km/h",
+    "sunrise": "06:18 am",
+    "sunset": "06:05 pm",
+    "condition_slug": "cloud",
+    "city_name": "Brasília",
+    "forecast": [
+      {
+        "date": "31/08",
+        "weekday": "Ter",
+        "max": 27,
+        "min": 16,
+        "description": "Tempo limpo",
+        "condition": "clear_day"
+      },
+      {
+        "date": "01/09",
+        "weekday": "Qua",
+        "max": 27,
+        "min": 15,
+        "description": "Tempo limpo",
+        "condition": "clear_day"
+      },
+      {
+        "date": "02/09",
+        "weekday": "Qui",
+        "max": 29,
+        "min": 15,
+        "description": "Tempo limpo",
+        "condition": "clear_day"
+      },
+      {
+        "date": "03/09",
+        "weekday": "Sex",
+        "max": 31,
+        "min": 17,
+        "description": "Tempo limpo",
+        "condition": "clear_day"
+      },
+      {
+        "date": "04/09",
+        "weekday": "Sáb",
+        "max": 31,
+        "min": 18,
+        "description": "Tempo limpo",
+        "condition": "clear_day"
+      },
+      {
+        "date": "05/09",
+        "weekday": "Dom",
+        "max": 33,
+        "min": 20,
+        "description": "Tempo limpo",
+        "condition": "clear_day"
+      },
+      {
+        "date": "06/09",
+        "weekday": "Seg",
+        "max": 34,
+        "min": 21,
+        "description": "Parcialmente nublado",
+        "condition": "cloud"
+      },
+      {
+        "date": "07/09",
+        "weekday": "Ter",
+        "max": 33,
+        "min": 22,
+        "description": "Tempo limpo",
+        "condition": "clear_day"
+      },
+      {
+        "date": "08/09",
+        "weekday": "Qua",
+        "max": 33,
+        "min": 21,
+        "description": "Tempo limpo",
+        "condition": "clear_day"
+      },
+      {
+        "date": "09/09",
+        "weekday": "Qui",
+        "max": 31,
+        "min": 23,
+        "description": "Tempo nublado",
+        "condition": "cloudly_day"
+      }
+    ]
+  },
+  "execution_time": 0.0,
+  "from_cache": true
+}
