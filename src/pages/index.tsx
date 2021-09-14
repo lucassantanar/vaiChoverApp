@@ -14,6 +14,9 @@ export const Header = styled.header`
 export const Main = styled.main`
   width: 100%;
   height: 82%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Footer = styled.footer`
@@ -41,6 +44,8 @@ export const HeaderLogoTitulo = styled.div`
 export const ConteudoMain = styled.div`
   width: 76.25rem;
   height: 25.313rem;
+  display: flex;
+  gap: 2rem;
 `;
 
 export const ConteudoFooter = styled.div`
@@ -48,16 +53,31 @@ export const ConteudoFooter = styled.div`
   color: white;
 `;
 
+export const CardPrevisaoAtual = styled.div`
+  width: 24.188rem;
+  height: 25.313rem;
 
+  background: #ffffff;
+  box-shadow: 6px 6px 25px rgba(100, 149, 237, 0.5);
+  border-radius: 15px;
+`;
+
+export const CardPrevisaoProximosDias = styled.div`
+  width: 50.438rem;
+  height: 25.313rem;
+
+  background: #ffffff;
+  box-shadow: 6px 6px 25px rgba(100, 149, 237, 0.5);
+  border-radius: 15px;
+`;
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-        width: '20rem',
+      width: '20rem',
     },
-  }),
+  })
 );
-
 
 export default function Home() {
   const classes = useStyles();
@@ -66,21 +86,26 @@ export default function Home() {
       <Header>
         <ConteudoHeader>
           <HeaderLogoTitulo>
-          <Image src={Logo} alt="VaiChover?" width={90} height={90} />
-          <div style={{paddingTop: '1rem'}}>
-            <TextField
-              id="outlined-secondary"
-              label="Digite o nome da cidade"
-              variant="outlined"
-              color="primary"
-              size="small"
-              className={classes.root}
-            />
-          </div>
+            <Image src={Logo} alt="VaiChover?" width={90} height={90} />
+            <div style={{ paddingTop: '1rem' }}>
+              <TextField
+                id="outlined-secondary"
+                label="Digite o nome da cidade"
+                variant="outlined"
+                color="primary"
+                size="small"
+                className={classes.root}
+              />
+            </div>
           </HeaderLogoTitulo>
         </ConteudoHeader>
       </Header>
-      <Main>Corpo</Main>
+      <Main>
+        <ConteudoMain>
+          <CardPrevisaoAtual>CardAtual</CardPrevisaoAtual>
+          <CardPrevisaoProximosDias>CardFuturo</CardPrevisaoProximosDias>
+        </ConteudoMain>
+      </Main>
       <Footer>
         <ConteudoFooter>© Lucas Santana</ConteudoFooter>
       </Footer>
