@@ -46,6 +46,17 @@ export const ConteudoMain = styled.div`
   height: 25.313rem;
   display: flex;
   gap: 2rem;
+
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    max-width: 15.625rem;
+    color: #929292;
+  }
 `;
 
 export const ConteudoFooter = styled.div`
@@ -56,6 +67,9 @@ export const ConteudoFooter = styled.div`
 export const CardPrevisaoAtual = styled.div`
   width: 24.188rem;
   height: 25.313rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background: #ffffff;
   box-shadow: 6px 6px 25px rgba(100, 149, 237, 0.5);
@@ -65,6 +79,9 @@ export const CardPrevisaoAtual = styled.div`
 export const CardPrevisaoProximosDias = styled.div`
   width: 50.438rem;
   height: 25.313rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background: #ffffff;
   box-shadow: 6px 6px 25px rgba(100, 149, 237, 0.5);
@@ -81,6 +98,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Home() {
   const classes = useStyles();
+  const mensagemLoading = 'Pesquise pela cidade para obter a previsão do tempo.';
   return (
     <>
       <Header>
@@ -102,8 +120,8 @@ export default function Home() {
       </Header>
       <Main>
         <ConteudoMain>
-          <CardPrevisaoAtual>CardAtual</CardPrevisaoAtual>
-          <CardPrevisaoProximosDias>CardFuturo</CardPrevisaoProximosDias>
+          <CardPrevisaoAtual><p>{mensagemLoading}</p></CardPrevisaoAtual>
+          <CardPrevisaoProximosDias><p>{mensagemLoading}</p></CardPrevisaoProximosDias>
         </ConteudoMain>
       </Main>
       <Footer>
